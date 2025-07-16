@@ -53,8 +53,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Hero section
-st.title("🚀 Invesho Vibe Coder Tool")
-st.markdown("Gain insights from Product Hunt to help guide your product launch strategy.")
+st.title("🔍 Product Hunt Trends Analyzer")
+st.markdown("Explore top-performing products, popular tags, and engagement metrics to craft a data-driven launch strategy.")
 
 # Sidebar navigation
 page = st.sidebar.radio("Navigate", ["📊 Trending Products", "🏷️ Tag Frequency Analysis"])
