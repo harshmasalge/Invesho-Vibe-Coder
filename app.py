@@ -75,6 +75,8 @@ if page == "📊 Trending Products":
     if not data:
         st.warning("❌ No data received from Product Hunt API.")
     else:
+        df = pd.DataFrame(data)
+        st.download_button("📥 Download Data as CSV", df.to_csv(index=False), "trending_products.csv", "text/csv")
         for product in data:
             st.subheader(product["name"])
             st.markdown(f"*{product['tagline']}*")
