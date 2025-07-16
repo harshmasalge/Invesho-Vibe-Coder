@@ -1,12 +1,13 @@
-# Invesho Vibe Coder Tool 🚀
+# 🔍 Product Hunt Trends Analyzer
 
-This Streamlit app analyzes trending products on Product Hunt using their GraphQL API.
+Explore top-performing products, popular tags, and engagement metrics to craft a data-driven launch strategy.
 
 ### Features
 - Fetch trending products by upvotes
 - Visualize most common tags with animated gradient bar charts
-- Filter and expand product insights with detailed view
 - Responsive and stylish UI with download support
+- Built with Streamlit, backed by the Product Hunt API
+
 
 ### How to Run
 ```bash
