@@ -120,7 +120,7 @@ elif page == "🏷️ Tag Frequency Analysis":
             top_n = st.slider("Select number of top tags to display", 5, min(20, len(tag_counts)), 10)
             top_tags = tag_counts.head(top_n)
 
-            cmap = LinearSegmentedColormap.from_list("green_red", ["#38ef7d", "#ff6b6b", "#c2185b"])
+            cmap = LinearSegmentedColormap.from_list("green_red", ["#c2185b","#38ef7d", "#ff6b6b"])
             norm = plt.Normalize(top_tags.min(), top_tags.max())
             colors = [cmap(norm(value)) for value in top_tags.values]
 
