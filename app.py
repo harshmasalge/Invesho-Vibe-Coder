@@ -127,7 +127,7 @@ elif page == "🏷️ Tag Frequency Analysis":
             ax.set_facecolor('#111')
             fig.patch.set_facecolor('#111')
             ax.set_title("Most Common Tags", color='white', fontweight='bold')
-            ax.set_ylabel("Frequency", color='white')
+            ax.set_ylabel("Frequency (number of occurrences in the fetched products)", color='white')
             ax.set_xlabel("Tag", color='white')
             ax.tick_params(axis='x', colors='white', rotation=45)
             ax.tick_params(axis='y', colors='white')
