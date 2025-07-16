@@ -1,13 +1,17 @@
 # scraper.py
 
 import requests
+import streamlit as st  # Required to access Streamlit secrets
 
 def get_sample_data(limit=5):
     print("Querying Product Hunt API...")
 
+    # Load the token from secrets
+    token = st.secrets["api"]["producthunt_token"]
+
     url = "https://api.producthunt.com/v2/api/graphql"
     headers = {
-        "Authorization": "Bearer Z2-e4F0oQuaRjlbwEMnNhdeBc0-wucXKuhjwYRo31uU",
+        "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
         "Accept": "application/json"
     }
